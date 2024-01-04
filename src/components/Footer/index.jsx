@@ -27,10 +27,10 @@ export default function Footer() {
               <FontAwesomeIcon icon={faShoppingBasket} />
             </i>
           </h3>
-          <p>
+          {/* <p>
             Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Natus,
             Laudantium?
-          </p>
+          </p> */}
           <div className="share">
             <a href="/">
               <i>
@@ -129,15 +129,6 @@ export default function Footer() {
           </button>
           <img src="image/payment.png" alt="" />
         </div>
-      </div>
-      <div className="credits">
-        <p>
-          Created By
-          {' '}
-          <span>Mr. Web Designer</span>
-          {' '}
-          | All Rights Reserved
-        </p>
       </div>
     </footer>
   );

@@ -3,6 +3,15 @@ import React from 'react';
 import './Banner.css';
 
 export default function Banner() {
+  const handleButtonClick = () => {
+    const productsElement = document.getElementById('products');
+    if (productsElement) {
+      window.scrollTo({
+        top: productsElement.offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  };
   return (
     <section
       className="banner"
@@ -21,7 +30,7 @@ export default function Banner() {
           {' '}
           products
         </h3>
-        <button type="button" className="btn">
+        <button type="button" className="btn" onClick={handleButtonClick}>
           shop now
         </button>
       </div>
